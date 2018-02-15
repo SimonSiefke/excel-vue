@@ -1,0 +1,8 @@
+{
+  "root": true,
+  "extends": ["plugin:vue/essential", "@vue/standard", "@vue/typescript"],
+  "rules": {
+    "space-before-function-paren": ["error", "never"],
+    "comma-dangle": ["error", "always-multiline"]
+  }
+}
