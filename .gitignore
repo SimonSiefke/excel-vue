@@ -23,4 +23,5 @@ yarn-error.log*
 *.sln
 
 # ssl certificates
-ssl/*
+ssl/server.crt
+ssl/server.key

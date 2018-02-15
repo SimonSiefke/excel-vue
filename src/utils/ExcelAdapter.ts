@@ -3,7 +3,10 @@ function _getAddress(addressString: string) {
   return addressString.split('!')[1]
 }
 
-const ExcelFunctions = {
+interface i {
+  [key: string]: Function
+}
+const ExcelFunctions: i = {
   writeToExcel(data: Array<Array<string | number | boolean>>) {
     Excel.run(async context => {
       // select worksheet
@@ -47,9 +50,9 @@ const ExcelFunctions = {
 /* higher order function wrapper for functions using Excel
    prevents errors in the console when the app is loaded
    outside of excel */
-function withExcel(target: Object, propertyKey: string) {
+function withExcel(target: { [key: string]: any }, propertyKey: string) {
   if (typeof Excel !== 'undefined') {
-    return target
+    return target[propertyKey]
   } else {
     return () => console.warn('Excel is not available')
   }

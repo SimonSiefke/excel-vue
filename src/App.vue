@@ -11,9 +11,9 @@
 <script lang="ts">
 import Vue from 'vue'
 import axios from 'axios' // for ajax requests
+import { TimeEntryKey, TimeEntry } from '@/types/TimeEntry'
 import { buildTemplate } from '@/utils'
 import ExcelAdapter from '@/utils/ExcelAdapter'
-import { TimeEntryKey, TimeEntry } from '@/types/TimeEntry'
 
 const url = process.env.VUE_APP_API_URL
 
