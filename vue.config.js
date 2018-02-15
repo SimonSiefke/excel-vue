@@ -11,7 +11,6 @@ module.exports = {
       cert: fs.readFileSync('./ssl/server.crt'),
       key: fs.readFileSync('./ssl/server.key'),
     },
-    open: true, // opens application in browser
     port: 3000,
   },
 }

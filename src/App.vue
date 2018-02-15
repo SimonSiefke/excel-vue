@@ -11,7 +11,8 @@
 <script lang="ts">
 import Vue from 'vue'
 import axios from 'axios' // for ajax requests
-import { buildTemplate, writeToExcel } from '@/helpers'
+import { buildTemplate } from '@/utils'
+import ExcelAdapter from '@/utils/ExcelAdapter'
 import { TimeEntryKey, TimeEntry } from '@/types/TimeEntry'
 
 const url = process.env.VUE_APP_API_URL
@@ -42,7 +43,7 @@ export default Vue.extend({
   watch: {
     timeEntries(newTimeEntries) {
       if (newTimeEntries) {
-        writeToExcel(buildTemplate(newTimeEntries))
+        ExcelAdapter.writeToExcel(buildTemplate(newTimeEntries))
       }
     },
   },
