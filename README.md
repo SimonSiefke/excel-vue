@@ -1,6 +1,6 @@
 # vue-excel
 
-> A excel plugin build with vue
+> A excel plugin build with Vue.js
 
 ## Quickstart
 
