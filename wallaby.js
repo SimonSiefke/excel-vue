@@ -6,7 +6,7 @@ module.exports = wallaby => {
 
     env: {
       type: 'node',
-      runner: 'node'
+      runner: 'node',
     },
 
     preprocessors: {
@@ -15,8 +15,8 @@ module.exports = wallaby => {
           sourceMap: true,
           compact: false,
           filename: file.path,
-          plugins: ['transform-es2015-modules-commonjs']
-        })
+          plugins: ['transform-es2015-modules-commonjs'],
+        }),
     },
 
     setup(wallaby) {
@@ -25,7 +25,7 @@ module.exports = wallaby => {
       jestConfig.moduleNameMapper = {
         '^@/components/([^\\.]*)$':
           wallaby.projectCacheDir + '/src/components/$1.vue',
-        '^@/(.*)$': wallaby.projectCacheDir + '/src/$1'
+        '^@/(.*)$': wallaby.projectCacheDir + '/src/$1',
       }
 
       delete jestConfig.transform['^.+\\.tsx?$']
@@ -33,6 +33,6 @@ module.exports = wallaby => {
       wallaby.testFramework.configure(jestConfig)
     },
 
-    testFramework: 'jest'
+    testFramework: 'jest',
   }
 }
