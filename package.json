@@ -14,13 +14,13 @@
     "generate-plugin-xml": "node generate-plugin-xml.js"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.18.0",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.13",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "@types/jest": "^22.0.1",
+    "@types/jest": "^23.3.5",
     "@vue/cli-plugin-babel": "^3.0.0-alpha.13",
     "@vue/cli-plugin-e2e-cypress": "^3.0.0-alpha.13",
     "@vue/cli-plugin-eslint": "^3.0.0-alpha.13",
@@ -32,10 +32,10 @@
     "@vue/eslint-config-typescript": "^3.0.0-alpha.13",
     "@vue/test-utils": "^1.0.0-beta.10",
     "babel-core": "^7.0.0-0",
-    "lint-staged": "^6.0.0",
+    "lint-staged": "^7.3.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
-    "ts-jest": "^22.0.1",
+    "ts-jest": "^23.10.4",
     "vue-template-compiler": "^2.5.13"
   },
   "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
