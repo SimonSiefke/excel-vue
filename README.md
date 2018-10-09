@@ -1,5 +1,7 @@
 # vue-excel
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SimonSiefke/excel-vue.svg)](https://greenkeeper.io/)
+
 > A excel plugin build with Vue.js
 
 ## Quickstart
